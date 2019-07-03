@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/service/denLuService.js"></script>
+    <script src="js/controller/denLuController.js"></script>
+    <meta charset="UTF-8">
+    <title>zhu ce</title>
+</head>
+
+<body ng-app="test" ng-controller="denLuController">
+<form>
+    姓名：<input name="username" ng-model="entity.username"><br>
+    密码：<input name="password" ng-model="entity.password"><br>
+    手机号：<input name="phone" ng-model="phone"><br>
+    验证码：<input name="password" ng-model="code"><br>
+    <input type="button" value="发送验证码" ng-click="sendCode()">
+    <input type="button" value="注册" ng-click="zhuCe()">
+</form>
+</body>
+</html>

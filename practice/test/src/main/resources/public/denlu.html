@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/service/denLuService.js"></script>
+    <script src="js/controller/denLuController.js"></script>
+    <meta charset="UTF-8">
+    <title>deng lu</title>
+</head>
+
+<body ng-app="test" ng-controller="denLuController">
+<form>
+    姓名：<input name="username" ng-model="entity.username"><br>
+    密码：<input type="password" name="password" ng-model="entity.password"><br>
+    <input type="button" value="登录" ng-click="denLu()">
+    <a href="Hello.html">注册</a>
+</form>
+</body>
+</html>
