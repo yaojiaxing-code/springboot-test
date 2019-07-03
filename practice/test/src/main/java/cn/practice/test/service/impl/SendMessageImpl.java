@@ -6,12 +6,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 
 @Service
 public class SendMessageImpl implements SendMessage{
 
-    @Autowired
+    @Resource
+    //@Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
 
     @Autowired
