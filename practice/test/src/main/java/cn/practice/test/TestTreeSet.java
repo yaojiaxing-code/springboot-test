@@ -31,8 +31,6 @@ public class TestTreeSet {
         //TreeSet<People2> treeSet2 = new TreeSet<>();
         treeSet2.add(people2);
         treeSet2.add(people3);
-        System.out.println(treeSet2);
-
-
+        System.out.println("treeSet2:"+treeSet2);
     }
 }
